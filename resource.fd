@@ -1,0 +1,30 @@
+!MS$FREEFORM
+! Microsoft Developer Studio generated include file.
+! Used by Browser.rc
+!
+      integer, parameter :: IDFILELOAD                      = 2
+      integer, parameter :: IDD_ABOUTBOX                    = 100
+      integer, parameter :: IDP_SOCKETS_INIT_FAILED         = 104
+      integer, parameter :: IDR_MAINFRAME                   = 128
+      integer, parameter :: IDR_BROWSETYPE                  = 129
+      integer, parameter :: IDB_TOOLBARBITMAP               = 132
+      integer, parameter :: IDR_CONTEXTGRAPHIC              = 134
+      integer, parameter :: IDD_MOVIEPLAY                   = 137
+      integer, parameter :: IDC_COMBOURL                    = 1001
+      integer, parameter :: IDC_PLAY                        = 1002
+      integer, parameter :: IDC_END                         = 1004
+      integer, parameter :: IDC_PAUSE                       = 1005
+      integer, parameter :: IDC_LOCPROGRESS                 = 1008
+      integer, parameter :: IDC_VIDEO                       = 1009
+      integer, parameter :: IDC_ENDDIALOG                   = 1010
+      integer, parameter :: IDC_SLIDER1                     = 1012
+      integer, parameter :: ID_BACK                         = 32771
+      integer, parameter :: ID_NEXT                         = 32772
+      integer, parameter :: ID_HOME                         = 32773
+      integer, parameter :: ID_STOP                         = 32774
+      integer, parameter :: ID_FRESH                        = 32775
+      integer, parameter :: ID_MENU_VIEWER                  = 32777
+      integer, parameter :: ID_FULLSCREEN                   = 32779
+      integer, parameter :: ID_CLEARLEFTVIEW                = 32780
+      integer, parameter :: ID_CLEAR                        = 32781
+      integer, parameter :: ID_AVI                          = 32783

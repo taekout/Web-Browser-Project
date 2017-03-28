@@ -1,0 +1,806 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Browser.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Browser.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "기능(&K)"
+    BEGIN
+        MENUITEM "&Back",                       ID_BACK, INACTIVE
+        MENUITEM "&Next",                       ID_NEXT, INACTIVE
+        MENUITEM "&Home",                       ID_HOME
+        MENUITEM SEPARATOR
+        MENUITEM "&Stop",                       ID_STOP
+        MENUITEM "&Fresh",                      ID_FRESH
+        MENUITEM SEPARATOR
+        POPUP "&Viewer"
+        BEGIN
+            MENUITEM "GraphicFile View",            ID_MENU_VIEWER
+            MENUITEM "&Clear Left View",            ID_CLEARLEFTVIEW
+        END
+        MENUITEM "&AVI Play",                   ID_AVI
+        MENUITEM "올 FTP",                      ID_ALLFTP
+        MENUITEM "F&ullScreen",                 ID_FULLSCREEN
+        MENUITEM "트레이 아이콘",               ID_TRAY_ICON
+        MENUITEM "게임",                        ID_GAMEMENU
+        MENUITEM SEPARATOR
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+    END
+    MENUITEM "Add_&Favorites",              ID_ADDFAVORITE
+    POPUP "즐겨찾기"
+    BEGIN
+        MENUITEM "세종대학교",                  ID_SEJONGSITE
+        MENUITEM "인터페이스",                  ID_INTERFACESITE
+        MENUITEM "다음",                        ID_DAUMSITE
+    END
+    MENUITEM "&Options",                    ID_OPTION
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "Browser 정보(&A)...",         ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXTGRAPHIC MENU DISCARDABLE 
+BEGIN
+    POPUP "Graphics"
+    BEGIN
+        MENUITEM "&Graphics File View",         ID_MENU_VIEWER_INSPLIT
+        MENUITEM "&Clear View",                 ID_CLEAR
+        MENUITEM "&New Split",                  ID_WINDOW_SPLIT
+        MENUITEM "Stretch Image(Coming soon)",  ID_STRETCHIMAGE
+    END
+    POPUP "Split"
+    BEGIN
+        MENUITEM "&Graphics File View",         ID_MENU_VIEWER_INSPLIT
+        MENUITEM "&New Split",                  ID_WINDOW_SPLIT
+    END
+END
+
+IDR_FUTURE MENU DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",         ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "저장(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "인쇄 설정(&R)...",            ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "Browser 정보(&A)...",         ID_APP_ABOUT
+    END
+    POPUP "기능(&K)"
+    BEGIN
+        MENUITEM "&Back",                       ID_BACK, INACTIVE
+        MENUITEM "&Next",                       ID_NEXT, INACTIVE
+        MENUITEM "&Home",                       ID_HOME
+        MENUITEM SEPARATOR
+        MENUITEM "&Stop",                       ID_STOP
+        MENUITEM "&Fresh",                      ID_FRESH
+        MENUITEM SEPARATOR
+        POPUP "&Viewer"
+        BEGIN
+            MENUITEM "GraphicFile View",            ID_MENU_VIEWER
+            MENUITEM "&Clear Left View",            ID_CLEARLEFTVIEW
+        END
+        MENUITEM "&AVI Play",                   ID_AVI
+        MENUITEM "F&ullScreen",                 ID_FULLSCREEN
+    END
+END
+
+IDR_LINKMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "검색 사이트"
+    BEGIN
+        MENUITEM "www.daum.net",                ID_SEARCH_DAUM
+        MENUITEM "www.naver.com",               ID_SEARCH_NAVER, INACTIVE
+        MENUITEM "www.empas.com",               ID_SEARCH_EMPAS
+        MENUITEM "www.google.co.kr",            ID_SEARCH_GOOGLE
+        MENUITEM "www.altavista.co.kr",         ID_SEARCH_ALTAVISTA
+        MENUITEM "www.lycos.co.kr",             ID_SEARCH_LYCOS
+        MENUITEM "www.msn.co.kr",               ID_SEARCH_MSN
+        MENUITEM "www.yahoo.co.kr",             ID_SEARCH_YAHOO
+        MENUITEM "search.chol.com",             ID_SEARCH_CHOL
+        MENUITEM "search.dreamwiz.com",         ID_SEARCH_DREAMWIZ
+        MENUITEM "www.hanmir.com",              ID_SEARCH_HANMIR
+    END
+    POPUP "즐겨찾기"
+    BEGIN
+        MENUITEM "세종대학교",                  ID_SEJONGSITE
+        MENUITEM "인터페이스",                  ID_INTERFACESITE
+        MENUITEM "다음",                        ID_DAUMSITE
+    END
+END
+
+IDR_GAMEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "게 임(&G)"
+    BEGIN
+        MENUITEM "오   목(&O)",                 ID_GAME_OMOK
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         ID_FULLSCREEN,          VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 330, 18
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    COMBOBOX        IDC_COMBOURL,3,2,271,175,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MOVIEPLAY DIALOG DISCARDABLE  0, 0, 270, 166
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "사시미 1.0"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "END Dialog",IDC_ENDDIALOG,213,128,50,14
+    DEFPUSHBUTTON   "PLAY",IDC_PLAY,72,145,24,14
+    PUSHBUTTON      "END",IDC_END,107,145,24,14
+    PUSHBUTTON      "||",IDC_PAUSE,142,145,24,14
+    CONTROL         "",IDC_VIDEO,"Static",SS_BLACKFRAME,7,7,256,120
+    DEFPUSHBUTTON   "Load Files..",IDFILELOAD,213,145,50,14
+    CONTROL         "Slider1",IDC_PLAYSLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,13,126,199,19
+END
+
+IDD_FTP DIALOGEX 0, 0, 403, 327
+STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "올 FTP ^^"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    LTEXT           "Address :",IDC_ADDRESS_STATIC,15,7,42,12,SS_SUNKEN
+    COMBOBOX        IDC_ADDRESS_COMBOBOX,15,18,191,98,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "User Name :",IDC_USER_STATIC,15,35,56,13,SS_SUNKEN
+    COMBOBOX        IDC_NAME_COMBOBOX,15,49,98,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Password :",IDC_STATIC,119,33,47,14,SS_SUNKEN
+    EDITTEXT        IDC_PASSWORD_EDIT,119,49,113,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Connect",IDC_CONNECT_BUTTON,248,44,76,28
+    LTEXT           "Server File List :",IDC_FILE_LIST_STATIC,15,70,84,11,
+                    SS_SUNKEN
+    LISTBOX         IDC_FILELIST_LISTBOX,15,83,248,85,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_ACCEPTFILES
+    CONTROL         "Upload",IDC_UPLOAD_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,292,219,76,35
+    LTEXT           "Local File List :",IDC_LOCALLIST_STATIC,15,181,86,11,
+                    SS_SUNKEN
+    LISTBOX         IDC_LOCALLIST_LISTBOX,15,195,248,77,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_ACCEPTFILES
+    CONTROL         "Download",IDC_DOWNLOAD_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,292,107,76,35
+    LISTBOX         IDC_MANAGEADDRESS_LIST,236,13,154,26,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Help",IDC_BUTTONHELP,278,275,118,46,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+IDD_INPUT DIALOG DISCARDABLE  0, 0, 228, 67
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "파일 이름 변경/삭제"
+FONT 10, "System"
+BEGIN
+    LTEXT           "이름을 입력해주세요.",IDC_INPUTNAME_STATIC,17,13,126,11
+    EDITTEXT        IDC_INPUTNAME_EDIT,15,31,143,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,163,17,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,34,50,14
+END
+
+IDD_ALARMOPTION DIALOGEX 0, 0, 235, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "알람 옵션"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,178,24,50,14
+    LTEXT           "알람 시간 설정  :",IDC_STATIC,13,13,61,11
+    LTEXT           "시간(AM)",IDC_HOUR,25,35,31,10
+    LTEXT           "분",IDC_MINUTE,93,35,13,11
+    EDITTEXT        IDC_HOUREDIT,24,46,33,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPINHOUR,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,56,46,7,
+                    13
+    EDITTEXT        IDC_MINUTEEDIT,90,46,33,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPINMINUTE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,122,46,7,
+                    13
+    CONTROL         "알람 설정 On/Off",IDC_ALARMCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,13,72,11
+    PUSHBUTTON      "음악 설정",IDC_SETALARMMUSIC,180,62,48,12,0,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 296, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "이 제품에 대해서 궁금하십니까?"
+FONT 11, "HY견고딕"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Browser Version 0.2",IDC_STATIC,40,17,119,8,SS_NOPREFIX
+    LTEXT           "Made at 2001 July",IDC_STATIC,40,29,119,8
+    DEFPUSHBUTTON   "확인",IDOK,239,7,50,14,WS_GROUP
+    LTEXT           "1. 동영상 플레이 기능",IDC_STATICHELP3,25,87,233,15
+    LTEXT           "통합 환경의 웹 브라우져 입니다.",IDC_STATICHELP,25,49,
+                    233,15
+    LTEXT           "포함된 기능들",IDC_STATICHELP2,25,68,233,15
+    LTEXT           "2. FTP Client 기능",IDC_STATICHELP4,25,106,233,15
+    LTEXT           "3. 방문한 URL 관리 기능",IDC_STATICHELP5,25,125,233,15
+    LTEXT           "4. 레지스트리를 이용한 즐겨찾기 관리 기능",
+                    IDC_STATICHELP6,25,143,233,15
+    LTEXT           "5. 트레이 아이콘을 이용한 브라우져 관리 기능",
+                    IDC_STATICHELP7,25,163,233,15
+    LTEXT           "6. 레지스트리를 응용한 알람 기능.. (시간과 사운드 자기 임의로 설정 가능)",
+                    IDC_STATICHELP8,25,183,233,15
+END
+
+IDD_SETALARM_PROPERTY DIALOGEX 0, 0, 288, 129
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "My Page"
+FONT 12, "휴먼옛체", 0, 0, 0x1
+BEGIN
+    LTEXT           "알람 시간 설정  :",IDC_STATIC,16,16,68,15
+    LTEXT           "시간(AM)",IDC_HOUR,41,58,35,15
+    LTEXT           "분",IDC_MINUTE,119,58,15,16
+    EDITTEXT        IDC_HOUREDIT,40,75,38,19,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINHOUR,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,77,74,8,19
+    EDITTEXT        IDC_MINUTEEDIT,116,74,38,19,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINMINUTE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,152,74,8,19
+    CONTROL         "알람 설정 On/Off",IDC_ALARMCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,183,27,82,16
+    PUSHBUTTON      "음악 설정",IDC_SETALARMMUSIC,208,84,72,37,0,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_SETHOMEPAGE_PROPERTY DIALOG DISCARDABLE  0, 0, 232, 109
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "My Page"
+FONT 14, "바탕체"
+BEGIN
+    LTEXT           "나만의 홈페이지를 꾸며봅시다! :",IDC_STATIC,13,32,122,8
+    LTEXT           "홈페이지 주소 :",IDC_STATIC,13,58,66,9
+    EDITTEXT        IDC_SETHOMEPAGE_EDIT,80,56,123,13,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Browser MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Browser\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Browser.EXE\0"
+            VALUE "ProductName", "Browser 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MOVIEPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 321
+    END
+
+    IDD_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_ALARMOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_SETALARM_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_SETHOMEPAGE_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDR_MAINFRAME DLGINIT
+BEGIN
+    IDC_COMBOURL, 0x403, 20, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x642e, 0x7561, 0x2e6d, 0x656e, 
+0x0074, 
+    IDC_COMBOURL, 0x403, 21, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x6e2e, 0x7661, 0x7265, 0x632e, 
+0x6d6f, "\000" 
+    IDC_COMBOURL, 0x403, 23, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x6c2e, 0x6379, 0x736f, 0x632e, 
+0x2e6f, 0x726b, "\000" 
+    IDC_COMBOURL, 0x403, 24, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x732e, 0x6a65, 0x6e6f, 0x2e67, 
+0x6361, 0x6b2e, 0x0072, 
+    IDC_COMBOURL, 0x403, 25, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x632e, 0x7779, 0x726f, 0x646c, 
+0x632e, 0x2e6f, 0x726b, "\000" 
+    IDC_COMBOURL, 0x403, 24, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x642e, 0x6572, 0x6d61, 0x6977, 
+0x2e7a, 0x6f63, 0x006d, 
+    0
+END
+
+IDD_FTP DLGINIT
+BEGIN
+    IDC_ADDRESS_COMBOBOX, 0x403, 16, 0
+0x6563, 0x732e, 0x6a65, 0x6e6f, 0x2e67, 0x6361, 0x6b2e, 0x0072, 
+    IDC_ADDRESS_COMBOBOX, 0x403, 13, 0
+0x7777, 0x2e77, 0x6164, 0x6d75, 0x6e2e, 0x7465, "\000" 
+    IDC_ADDRESS_COMBOBOX, 0x403, 17, 0
+0x7777, 0x2e77, 0x7266, 0x6565, 0x6863, 0x6c61, 0x632e, 0x6d6f, "\000" 
+    IDC_ADDRESS_COMBOBOX, 0x403, 16, 0
+0x7777, 0x2e77, 0x796c, 0x6f63, 0x2e73, 0x6f63, 0x6b2e, 0x0072, 
+    IDC_ADDRESS_COMBOBOX, 0x403, 20, 0
+0x7777, 0x2e77, 0x6e69, 0x6574, 0x6672, 0x6361, 0x2e65, 0x6f63, 0x6b2e, 
+0x0072, 
+    IDC_NAME_COMBOBOX, 0x403, 9, 0
+0x656c, 0x7069, 0x6968, 0x6c65, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBARBITMAP       BITMAP  DISCARDABLE     "res\\ToolBar16bit.bmp"
+IDR_LINKBAR             BITMAP  DISCARDABLE     "res\\linkbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splash1.bmp"
+IDB_DOWNLOAD            BITMAP  DISCARDABLE     "res\\down.bmp"
+IDB_UPLOAD              BITMAP  DISCARDABLE     "res\\up.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_LINKBAR TOOLBAR DISCARDABLE  35, 15
+BEGIN
+    BUTTON      ID_SEARCHSITE
+    BUTTON      ID_FAVORITESITE
+    SEPARATOR
+    BUTTON      ID_INTERFACESITE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_KOREANSONG          WAVE    DISCARDABLE     "res\\애국가.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "Property Sheet"
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+    CG_ID_VIEW_CHATDLG      "Show or hide ChatDlg\nToggle ChatDlg"
+    CG_ID_VIEW_INFOBAR      "Show or hide InfoBar\nToggle InfoBar"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Browser\n\nBrowse\n\n\nBrowser.Document\nBrowse Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Browser"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+    ID_WEBSITE              "www.daum.net                                  "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BACK                 "바로 직전의 웹사이트로 접속합니다.\nBACK!"
+    ID_NEXT                 "이 다음의 웹사이트로 접속합니다\nGo Next!"
+    ID_HOME                 "홈디렉토리로 접속합니다. 옵션서 설정 가능\nHOME URL"
+    ID_STOP                 "다운로드를 중단합니다\nSTOP"
+    ID_FRESH                "다운로드를 다시 시작합니다.\nFRESH"
+    ID_MENU_VIEWER          "Graphics 파일을 볼 수 있는 뷰어를 띄웁니다...\n올See^^"
+    ID_FULLSCREEN           "FULL SCREEN MODE(Drafted Version)\nF11"
+    ID_CLEARLEFTVIEW        "Clear Left Media Window\nClear Left Media Window"
+    ID_CLEAR                "사진을 없앱니다..."
+    ID_AVI                  "동영상을 플레이합니다.\nSaSami =_=;"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SEARCHSITE           "검색 사이트를 모아놓았습니다."
+    ID_FAVORITESITE         "즐겨찾기를 보여줍니다\n즐겨찾기"
+    ID_INTERFACESITE        "인터페이스 홈페이지를 여행해볼까요? ^^\nwww.interface.or.kr"
+    ID_SEARCH_DAUM          "DAUM 검색\nwww.daum.net"
+    ID_SEARCH_NAVER         "네이버 검색\nwww.naver.com"
+    ID_SEARCH_EMPAS         "엠파스 검색\nwww.empas.com"
+    ID_SEARCH_GOOGLE        "구글 검색\nwww.google.co.kr"
+    ID_SEARCH_ALTAVISTA     "알타비스타 검색\nwww.altavista.co.kr"
+    ID_SEARCH_LYCOS         "라이코스 검색\nwww.lycos.co.kr"
+    ID_SEARCH_MSN           "MSN 검색\nwww.msn.co.kr"
+    ID_SEARCH_YAHOO         "야후 검색\nwww.yahoo.co.kr"
+    ID_SEARCH_CHOL          "천리안 검색\nsearch.chol.com"
+    ID_SEARCH_DREAMWIZ      "드림위즈 검색\nsearch.dreamwiz.com"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SEARCH_HANMIR        "한미르 검색\nwww.hanmir.com"
+    ID_SEJONGSITE           "www.sejong.ac.kr\nwww.sejong.ac.kr"
+    ID_DAUMSITE             "다음에 접속합니다.\nwww.daum.net"
+    ID_ALLSEE               "올 FTP 를 실행합니다\n올 FTP"
+    ID_ADDFAVORITE          "현재 사이트를 즐겨찾기에 추가합니다.\n즐겨찾기 추가"
+    ID_CAPTURESCREEN        "화면을 그림 파일로 저장합니다.\n화면 저장"
+    ID_TRAY_ICON            "트레이 아이콘으로 이동합니다.\n트레이 아이콘"
+    ID_GAMEMENU             "즐거운 게임 합시다 ^^\n즐거운 게임 합시다 ^^"
+    ID_GAME_OMOK            "오목 게임을 합니다 ^^\n오목 게임을 합니다 ^^"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTION               "옵션을 설정합니다.\n옵션"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STRETCHIMAGE         "뷰 공간 크기만큼 이미지를 늘입니다..\n뷰 공간 크기만큼 이미지를 늘입니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Browser.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

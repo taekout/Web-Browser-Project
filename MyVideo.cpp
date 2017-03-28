@@ -1,0 +1,27 @@
+// MyVideo.cpp: implementation of the CMyVideo class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Browser.h"
+#include "MyVideo.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CMyVideo::CMyVideo()
+{
+
+}
+
+CMyVideo::~CMyVideo()
+{
+
+}
